@@ -1,4 +1,4 @@
-class bob(object):
+class bob(object):xxxxxxx
 	def __int__(self,quest):
 		self.quest = quest
 

@@ -1,10 +1,13 @@
-class bob(object):
-	def __int__(self,quest):
-		self.quest = quest
-	
-	if quest[:1]=='?':
-		print('Sure')
-	elif quest.upper():
-		print('Whoa, chill out!')
-	elif quest.islower():
-		print('Whatever.')
+class Bob:
+        def hey(self, s):
+                if s.endswith("?") and s.isupper():
+                        return 'Woah, chill out!'
+                if s.endswith("?"):
+                        return 'Sure.'
+                if s.isupper():
+                        return 'Woah, chill out!'
+                if s.islower():
+                        return 'Whatever.'
+                if len(s.strip())==0:
+                        return 'Fine. Be that way!'
+                else: return 'Whatever.'
