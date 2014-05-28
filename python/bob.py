@@ -2,14 +2,13 @@ class bob(object):
 	def __int__(self,quest):
 		self.quest = quest
 
-	if quest[len(quest)-1]='?':
+	if quest[:1]=='?':
 		 print('Sure.')
 
 	elif quest.upper():
-		print('whoa, chill out!')
+		print('Whoa, chill out!')
 	elif quest.islower():
 		print('Whatever.')
-	elif quest[len(quest)-1]='?':
-		if 
-		print('Sure.')
+	elif quest.isdigit():
+		print('Whoteve.')
 		
