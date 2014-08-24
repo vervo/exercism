@@ -1,20 +1,20 @@
 class DNA:
 		def __init__(self, s):
 			self.s = s
-			print s
-		def to_rna(s):
+			
+		def to_rna(self):
 
-			if s == 'G':
-				s = 'C'
+			if self.s == 'G':
+				self.s = 'C'
 					#c->G
-			if s == 'C':
-				 return'G'
+			if self.s == 'C':
+				return'G'
 					#T->A
-			if s== 'T':
-				s = 'A'
+			if self.s == 'T':
+				self.s = 'A'
 					#A->U
-			if s == 'A':
-				s = 'U'
+			if self.s == 'A':
+				self.s = 'U'
 				
 			#for i in range(0,len(s)):
 					#G->c
@@ -30,7 +30,7 @@ class DNA:
 			#	if s[i] == 'A':
 			#		s[i] = 'U'
 			
-				return s
+			return self.s
 			
 		
 		
